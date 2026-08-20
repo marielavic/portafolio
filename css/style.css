@@ -1,0 +1,848 @@
+/* ==============================
+   PORTAFOLIO MARIELA
+   Estilo personalizado
+================================ */
+
+
+/* ==============================
+   CONFIGURACIÓN GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #fff8fb;
+
+    color: #3f3540;
+
+    line-height: 1.6;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+.contenedor {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* ==============================
+   NAVEGACIÓN
+================================ */
+
+header {
+    background-color: #3f3540;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow:
+        0 2px 12px rgba(63, 53, 64, 0.25);
+}
+
+
+.navbar {
+    width: 90%;
+    max-width: 1150px;
+
+    margin: auto;
+
+    min-height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.logo {
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+.menu {
+    list-style: none;
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+.menu a {
+    color: #fff0f5;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: color 0.3s;
+}
+
+
+.menu a:hover {
+    color: #f3b6cc;
+}
+
+
+/* ==============================
+   HERO / BANNER
+================================ */
+
+.hero {
+    min-height: 88vh;
+
+    background-image:
+        url("../img/banner.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+
+.hero-overlay {
+    min-height: 88vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(63, 53, 64, 0.90),
+            rgba(217, 139, 165, 0.72)
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 20px;
+}
+
+
+.hero-content {
+    max-width: 850px;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+.foto-perfil {
+    width: 170px;
+
+    height: 170px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 5px solid #f8dce7;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(217, 139, 165, 0.35);
+}
+
+
+.saludo {
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    color: #f3b6cc;
+
+    margin-bottom: 12px;
+}
+
+
+.hero h1 {
+    font-size: 52px;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h2 {
+    font-size: 24px;
+
+    font-weight: normal;
+
+    color: #fff0f5;
+
+    margin-bottom: 20px;
+}
+
+
+.descripcion-hero {
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+
+    font-size: 18px;
+
+    color: #fff0f5;
+}
+
+
+.hero-botones {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ==============================
+   BOTONES
+================================ */
+
+.btn,
+.proyecto button {
+    display: inline-block;
+
+    background-color: #d98ba5;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 25px;
+
+    padding: 13px 24px;
+
+    font-size: 15px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s,
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+
+.btn:hover,
+.proyecto button:hover {
+    background-color: #c56f91;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(197, 111, 145, 0.30);
+}
+
+
+.btn-secundario {
+    background-color: transparent;
+
+    border: 2px solid #f8dce7;
+}
+
+
+.btn-secundario:hover {
+    background-color: #f8dce7;
+
+    color: #3f3540;
+}
+
+
+/* ==============================
+   SECCIONES
+================================ */
+
+.section {
+    padding: 90px 0;
+}
+
+
+.section-gray {
+    background-color: #fff0f5;
+}
+
+
+.titulo-seccion {
+    text-align: center;
+
+    font-size: 34px;
+
+    color: #3f3540;
+
+    margin-bottom: 15px;
+}
+
+
+.titulo-seccion::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+
+    height: 4px;
+
+    background-color: #d98ba5;
+
+    margin: 15px auto;
+
+    border-radius: 10px;
+}
+
+
+.subtitulo-seccion {
+    max-width: 650px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+
+    color: #7a6873;
+}
+
+
+/* ==============================
+   SOBRE MÍ
+================================ */
+
+.sobre-mi-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+
+.sobre-mi-texto h3 {
+    color: #3f3540;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+.sobre-mi-texto p {
+    margin-bottom: 16px;
+
+    color: #7a6873;
+}
+
+
+.datos-personales {
+    background-color: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border-left: 5px solid #d98ba5;
+
+    box-shadow:
+        0 5px 20px rgba(63, 53, 64, 0.06);
+}
+
+
+.dato {
+    display: flex;
+
+    flex-direction: column;
+
+    margin-bottom: 18px;
+}
+
+
+.dato:last-child {
+    margin-bottom: 0;
+}
+
+
+.dato strong {
+    color: #3f3540;
+
+    margin-bottom: 3px;
+}
+
+
+.dato span {
+    color: #7a6873;
+}
+
+
+/* ==============================
+   HABILIDADES
+================================ */
+
+.habilidades-container {
+    margin-top: 50px;
+}
+
+
+.habilidades-container h3 {
+    color: #3f3540;
+
+    margin-bottom: 20px;
+}
+
+
+.habilidades {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+
+.habilidades span {
+    background-color: #f8dce7;
+
+    color: #9b4f6d;
+
+    padding: 9px 16px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition:
+        transform 0.3s,
+        background-color 0.3s;
+}
+
+
+.habilidades span:hover {
+    background-color: #f3c3d4;
+
+    transform: translateY(-3px);
+}
+
+
+/* ==============================
+   PROYECTOS
+================================ */
+
+.proyectos-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+.proyecto {
+    background-color: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(63, 53, 64, 0.08);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+
+.proyecto:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(217, 139, 165, 0.20);
+}
+
+
+.proyecto-imagen {
+    height: 220px;
+
+    overflow: hidden;
+}
+
+
+.proyecto-imagen img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s;
+}
+
+
+.proyecto:hover .proyecto-imagen img {
+    transform: scale(1.06);
+}
+
+
+.proyecto-contenido {
+    padding: 25px;
+}
+
+
+.proyecto-categoria {
+    display: inline-block;
+
+    color: #9b4f6d;
+
+    background-color: #f8dce7;
+
+    border-radius: 20px;
+
+    padding: 5px 12px;
+
+    font-size: 12px;
+
+    margin-bottom: 12px;
+}
+
+
+.proyecto h3 {
+    color: #3f3540;
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+
+.proyecto p {
+    color: #7a6873;
+
+    margin-bottom: 20px;
+}
+
+
+.proyecto-tecnologias {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 22px;
+}
+
+
+.proyecto-tecnologias span {
+    padding: 5px 9px;
+
+    background-color: #fff0f5;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+
+    color: #7a6873;
+}
+
+
+/* ==============================
+   CONTACTO
+================================ */
+
+.contacto-container {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1.3fr;
+
+    gap: 50px;
+
+    margin-top: 40px;
+}
+
+
+.contacto-info {
+    background-color: #3f3540;
+
+    color: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(63, 53, 64, 0.15);
+}
+
+
+.contacto-info h3 {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+.contacto-info > p {
+    color: #f8dce7;
+
+    margin-bottom: 30px;
+}
+
+
+.contacto-dato {
+    margin-bottom: 25px;
+}
+
+
+.contacto-dato strong {
+    display: block;
+
+    color: #f3b6cc;
+
+    margin-bottom: 5px;
+}
+
+
+/* ==============================
+   FORMULARIO
+================================ */
+
+#formContacto {
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 25px rgba(63, 53, 64, 0.08);
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #3f3540;
+
+    font-weight: bold;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #e3cbd5;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s,
+        box-shadow 0.3s;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #d98ba5;
+
+    box-shadow:
+        0 0 0 3px rgba(217, 139, 165, 0.15);
+}
+
+
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* ==============================
+   FOOTER
+================================ */
+
+footer {
+    background-color: #2e2730;
+
+    color: #f8dce7;
+
+    padding: 30px 20px;
+}
+
+
+.footer-container {
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .proyectos-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .sobre-mi-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contacto-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+
+        padding: 18px 0;
+
+        gap: 15px;
+    }
+
+
+    .menu {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero {
+        background-attachment: scroll;
+    }
+
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+
+    .foto-perfil {
+        width: 140px;
+
+        height: 140px;
+    }
+
+
+    .proyectos-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .footer-container {
+        flex-direction: column;
+
+        gap: 5px;
+
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+
+    .hero-botones {
+        flex-direction: column;
+    }
+
+
+    .hero-botones .btn {
+        width: 100%;
+    }
+
+
+    .contacto-info,
+    #formContacto {
+        padding: 25px;
+    }
+
+}
